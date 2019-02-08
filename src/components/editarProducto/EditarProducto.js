@@ -19,7 +19,7 @@ class EditarProducto extends Component {
     this.props.mostrarProducto(id);
   }
   componentWillReceiveProps(nextProps, nextState) {
-    const {nombre, precio, id} = nextProps.producto;
+    const {nombre, precio} = nextProps.producto;
     this.setState({
       nombre,
       precio
